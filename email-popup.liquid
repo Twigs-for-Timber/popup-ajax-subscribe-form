@@ -1,5 +1,20 @@
+/*********************************
+  ___  _   _    _            
+ /   || | | |  | |           
+ \__  | | | |  | |  __       
+ /    |/  |/_) |/  /  \_/\/  
+ \___/|__/| \_/|__/\__/  /\_/
+               |\            
+               |/            
+
+Abinav Thakuri & Cam Gould
+http://elkfox.com
+*********************************/
+
+{% comment %}<!-- Place this snippet before any other MailChimp forms in your theme -->{% endcomment %}
+
 {% assign mailchimp == true %}
-	
+
 {% if mailchimp != true %}
 
 {% comment %}<!-- MailChimp Method -->{% endcomment %}
@@ -40,4 +55,5 @@
 </div><!--end .splash -->
 
 {% endif %}
+
 {{ 'email-popup.js' | asset_url | script_tag }}
